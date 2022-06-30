@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-color: #f5f5f5;
+}
+
+/*navbar */
+.navbar {
+  flex: 1;
+  text-align: right;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 9px 12px;
+  position: relative;
+  font-size: 20px;
+  font-family: "Shippori Antique B1", sans-serif;
+}
+.navbar ul li::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #d38d31;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after {
+  width: 100%;
+}
+nav img {
+  width: 80px;
+  border-radius: 50%;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-image: url("../images/bg.jpg");
+  overflow-y: hidden;
+}
+li a {
+  text-decoration: none;
+  color: #362706;
+  padding: 14px 16px;
+}
+nav .fa {
+  display: none;
+}
+/* end navbar */
+
+/*  home */
+.txt-home {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: left;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Shippori Antique B1", sans-serif;
+}
+.txt-home h4 {
+  background-color: #ffffff;
+  border: none;
+  opacity: 0.5;
+  display: inline;
+  color: #362706;
+}
+.txt-home h1 {
+  background-color: #ffffff;
+  border: none;
+  opacity: 0.6;
+  color: #362706;
+}
+.button-home {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #eeefea;
+  background: transparent;
+  font-size: 30px;
+  color: #eeefea;
+  font-family: "Shippori Antique B1", sans-serif;
+}
+.button-home:hover {
+  border: 1px solid #362706;
+  background-color: #362706;
+  transition: 0.5s;
+}
+@media (max-width: 700px) {
+  .txt-home h4 {
+    background-color: #ffffff;
+    border: none;
+    opacity: 0.5;
+    display: inline;
+    font-size: 15px;
+    color: #362706;
+  }
+  .txt-home h1 {
+    background-color: #ffffff;
+    border: none;
+    opacity: 0.6;
+    font-size: 20px;
+    color: #362706;
+  }
+  .navbar ul li {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    background-color: white;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -300px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+    width: 20px;
+  }
+  .navbar ul {
+    padding: 20px;
+  }
+
+  .button-home {
+    font-size: 15px;
+  }
+}
+/* end home */
+
+/* section 2 */
+.ic-section {
+  width: 150px;
+  border-radius: 50%;
+  padding: 10px;
+}
+#home2 {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+#home2 h1 {
+  color: #362706;
+  font-family: "Shippori Antique B1", sans-serif;
+  font-size: 45px;
+}
+#home2 h1::after {
+  content: "";
+  width: 40%;
+  height: 5px;
+  background: #d38d31;
+  display: block;
+  margin: auto;
+}
+#home2 p {
+  font-family: "Shippori Antique B1", sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  line-height: 20px;
+  color: #000;
+}
+#home2 .row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+#home2 .column {
+  flex-basis: 31%;
+  background: #c49564;
+  border-radius: 20px;
+  margin-bottom: 5%;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+#home2 .column:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+#home2 h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+  font-family: "Shippori Antique B1", sans-serif;
+}
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+  #home2 h1 {
+    font-size: 30px;
+  }
+}
+/* end section 2 */
+
+/* product */
+#product {
+  background-color: #f5f5f5;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+}
+#product h1 {
+  color: #362706;
+  font-family: "Shippori Antique B1", sans-serif;
+  font-size: 45px;
+}
+#product h1::after {
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #d38d31;
+  display: block;
+  margin: auto;
+}
+#product p {
+  font-family: "Shippori Antique B1", sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  line-height: 20px;
+  color: #000;
+}
+.img-product {
+  padding: 10px;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+}
+.vertical-img {
+  grid-row: span 2;
+}
+.horizontal-img {
+  grid-column: span 2;
+}
+.big-img {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.img-product div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 560px) {
+  .vertical-img {
+    grid-row: span 1;
+  }
+  .horizontal-img {
+    grid-column: span 1;
+  }
+  .big-img {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #product h1 {
+    font-size: 30px;
+  }
+}
+/* end product */
+
+/* demo */
+#demo {
+  background-color: #f5f5f5;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+  width: 80%;
+}
+iframe {
+  width: 65%;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+#demo h1 {
+  color: #362706;
+  font-family: "Shippori Antique B1", sans-serif;
+  font-size: 40px;
+
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+}
+#demo h1::after {
+  content: "";
+  width: 55%;
+  height: 5px;
+  background: #d38d31;
+  display: block;
+  margin: auto;
+}
+
+#demo p {
+  font-family: "Shippori Antique B1", sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  line-height: 20px;
+  color: #000;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+@media (max-width: 700px) {
+  #demo h1 {
+    font-size: 30px;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* end demo */
+
+/* team/profile */
+#team {
+  background-image: url(../images/bg_aside.png);
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+#team h1 {
+  color: #000;
+  font-family: "Shippori Antique B1", sans-serif;
+  font-size: 45px;
+  padding-top: 50px;
+}
+#team .column {
+  flex-basis: 80%;
+  margin-bottom: 5%;
+  padding: 10px;
+  transition: 0.5s;
+}
+#team .row {
+  display: flex;
+  justify-content: space-between;
+}
+#team img {
+  border-radius: 25px;
+  width: 500px;
+  padding: 10px;
+  transition: 0.5s;
+}
+#team p {
+  text-align: left;
+  font-size: 25px;
+  line-height: 1.5;
+  font-family: "Shippori Antique B1", sans-serif;
+}
+#team h1::after {
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #d38d31;
+  display: block;
+  margin: auto;
+}
+@media (max-width: 700px) {
+  #team h1 {
+    font-size: 30px;
+  }
+  #team img {
+    border-radius: 25px;
+    width: 350px;
+    padding: 10px;
+  }
+  #team p {
+    font-size: 15px;
+  }
+}
+
+/* end team/profile */
+
+/* footer */
+.footer {
+  background-color: #171717;
+  padding: 70px 0;
+  color: white;
+  font-family: "Shippori Antique B1", sans-serif;
+  line-height: 1.5;
+}
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .column {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer .column h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 30px;
+  position: relative;
+}
+.footer .column h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: #d38d31;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.logo-footer {
+  border-radius: 50%;
+  width: 100px;
+}
+.column .sosmed {
+  display: inline;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+}
+.footer img {
+  width: 40px;
+  padding-right: 20px;
+}
+.footer img:hover {
+  width: 50px;
+  transition: all 0.5s ease;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+@media (max-width: 700px) {
+  .footer .column {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .footer .column {
+    width: 100%;
+  }
+}
+/* end footer */
+
+a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #171717;
+}
